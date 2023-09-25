@@ -1,0 +1,232 @@
+<mxfile host="app.diagrams.net" modified="2023-09-25T19:54:20.613Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="OMbVFyS2s4AZFm4pmXxE" version="21.8.2" type="device">
+  <diagram name="Page-1" id="uvnOoF_jIeyzYQmnAms-">
+    <mxGraphModel dx="1500" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-1" value="GroupController" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="747.5" y="1070" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;GroupController&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ CreateGroup(group_name, possible_timeslots): Group&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetGroupInfo(group_info): Group&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ ObtainCode(group_id): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ ObtainLink(group_id): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ JoinGroup(code): Group&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ NewJoinGroup(user_id, group_id):&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ EditGroup(group_id, user_id, centralised_location, possible_timeslots):&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FindCentralisedLocation(group_id): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1190" width="250" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-3" value="LandingPageUI" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="662.5" y="684" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LaningPageUI&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ DisplayGroupAccessOptions():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ DisplayDetailsError():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="625" y="784" width="185" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-5" value="GroupTable" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="917.5" y="1660" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;GroupTable&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ AddGroup(Group):&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FindGroup(code): Group&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FindGroup(group_id): Group&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ RemoveGroup(group_id): Group&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ UpdateGroup(Group):&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1750" width="200" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-7" value="Group" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="643.75" y="1570" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Group&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- group_name: String&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- group_id: Int&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- users_id: Int []&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- activities_id: Int []&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- possible_timeslots: String(?)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- common_timeslots: Int []&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- centralised_location: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- code: String&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ SetGroupName(group_name): &lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetGroupName(): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetGroupId(): Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ SetLocation(location): &lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetLocation(): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ AddUser(user_id):&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ RemoveUser(user_id):&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetUsers(): Int []&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ AddActivitiesId(activities_id []):&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetActivitiesId(): Int []&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetCommonTimeslot(): String []&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ UpdateCommonTimeSlot(UserProfile):&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetPossibleTimeslots(): String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ EditPossibleTimeslots(String):&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1660" width="227.5" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-9" value="UserProfile" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1570" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;UserProfile&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- name: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- user_id: Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- address: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- available_timings: String(?)&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ GetUserName(): String&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ GetUserId(): Int&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ EditAddress(address):&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ GetAddress():&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ EditTimings(available_timings):&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetTimings(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1660" width="180" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-11" value="UserController" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="1060" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;UserController&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ CreateUser(name, address, available_timings): UserProfile&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetUserInfo(user_id): UserProfile&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetGroupUsers(user_id []): UserProfile []&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ EditUserProfile(user_id, name, address, available_timings): UserProfile&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ RemoveGroupUser(user_id): UserProfile&amp;nbsp;&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1180" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-13" value="Interface&lt;br&gt;GoogleAPI" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="694" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InterfaceGoogleAPI&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FindLocation(address_input): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FindLocation(centralised_address): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="280" y="784" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-15" value="Interface&lt;br&gt;WeatherAPI" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1253.75" y="804" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InterfaceWeatherAPI&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ CheckWeather(String): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1215" y="894" width="177.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-17" value="GroupInterface" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="977.5" y="694" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;GroupInterface&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- group_id: Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- user_id: Int&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ DisplayGroupStatus(group_id): Group&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ DisplayUserInfo(user_id): UserProfile&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ DisplayError():&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="910" y="784" width="235" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-19" value="Activity" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1136.25" y="1570" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-20" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Activity&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- name: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- group_id: Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- activity_id: Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- indoor: Boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- cost: Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- location: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- opening_hours: String (?)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- site_link: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- vote_count: Int&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetActivityName(): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetActivityId(): Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetIndoor(): Boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetCost(): Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetLocation(): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetOpeningHours(): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetSiteLink(): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetVoteCount(): Int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ IncreaseVote():&amp;nbsp;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1091.25" y="1660" width="170" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-21" value="ActivityTable" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="1667" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-22" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ActivityTable&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ AddActivity(Activity):&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FindActivity(group_id, activity_id): Activity&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ RemoveActivity(group_id, activity_id): Activity&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ UpdateActivity(Activity):&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1275" y="1757" width="270" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-23" value="ActivityController" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220.63" y="1070" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-24" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ActivityController&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ CreateActivity(name, group_id, indoor, cost, location, opening_hours, site_link): Activity&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetActivityInfo(group_id, activity_id): Activity&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetGroupActivities(group_id): Activity []&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;+ IncreaseActivityVoteCount(group_id, activity_id): Int&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;+ RemoveGroupActivity(group_id, activity_id): Activity&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1121.25" y="1190" width="298.75" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-25" value="UserTable" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385.5" y="1660" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-26" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;UserTable&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ AddUser(UserProfile):&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FindUser(user_id)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ RemoveUser(user_id): UserProfile&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ UpdateUser(UserProfile):&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="303" y="1750" width="245" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-27" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=1;entryY=0.446;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-18" target="8IvMyrpGu7eAvxIRYCVV-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1010" y="970" as="sourcePoint" />
+            <mxPoint x="803.75" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-28" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.972;entryY=0.453;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-18" target="8IvMyrpGu7eAvxIRYCVV-11">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="950" y="970" as="sourcePoint" />
+            <mxPoint x="858" y="1129" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-29" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=-0.009;entryY=0.431;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-18" target="8IvMyrpGu7eAvxIRYCVV-23">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1040" y="960" as="sourcePoint" />
+            <mxPoint x="868" y="1139" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-30" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.461;exitY=1.016;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.074;entryY=0.316;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-4" target="8IvMyrpGu7eAvxIRYCVV-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="550" y="930" as="sourcePoint" />
+            <mxPoint x="710" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-31" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.443;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="550" y="930" as="sourcePoint" />
+            <mxPoint x="400" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-32" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.197;exitY=0.223;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.468;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-11" target="8IvMyrpGu7eAvxIRYCVV-14">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="550" y="1040" as="sourcePoint" />
+            <mxPoint x="710" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-33" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.539;entryY=1.019;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.015;exitY=0.469;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-1" target="8IvMyrpGu7eAvxIRYCVV-14">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="550" y="1040" as="sourcePoint" />
+            <mxPoint x="710" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-34" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.967;exitY=0.73;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-1" target="8IvMyrpGu7eAvxIRYCVV-16">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="850" y="1140" as="sourcePoint" />
+            <mxPoint x="1200" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-35" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-7" target="8IvMyrpGu7eAvxIRYCVV-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="1470" as="sourcePoint" />
+            <mxPoint x="950" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-36" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;*&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="718" y="1584" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-37" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="888" y="1667" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-38" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="8IvMyrpGu7eAvxIRYCVV-21">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1217.25" y="1611.5" as="sourcePoint" />
+            <mxPoint x="1361.25" y="1611.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-39" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;*&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="1211.25" y="1585.5" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-40" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1342" y="1669.5" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-41" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="8IvMyrpGu7eAvxIRYCVV-25">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="240.5" y="1610" as="sourcePoint" />
+            <mxPoint x="384.5" y="1610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-42" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;*&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="234.5" y="1584" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-43" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="357.5" y="1660" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-44" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-2" target="8IvMyrpGu7eAvxIRYCVV-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="720" y="1590" as="sourcePoint" />
+            <mxPoint x="880" y="1590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-45" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-2" target="8IvMyrpGu7eAvxIRYCVV-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="815" y="1410" as="sourcePoint" />
+            <mxPoint x="694" y="1700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-46" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-12" target="8IvMyrpGu7eAvxIRYCVV-25">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="540" y="1590" as="sourcePoint" />
+            <mxPoint x="700" y="1590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-47" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-12" target="8IvMyrpGu7eAvxIRYCVV-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="540" y="1590" as="sourcePoint" />
+            <mxPoint x="700" y="1590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-48" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-24" target="8IvMyrpGu7eAvxIRYCVV-21">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1330" y="1590" as="sourcePoint" />
+            <mxPoint x="1490" y="1590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-49" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-24" target="8IvMyrpGu7eAvxIRYCVV-19">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1330" y="1590" as="sourcePoint" />
+            <mxPoint x="1490" y="1590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-50" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-9" target="8IvMyrpGu7eAvxIRYCVV-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="520" y="1710" as="sourcePoint" />
+            <mxPoint x="680" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-51" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;*&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="220" y="1550" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-52" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="626" y="1550" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-53" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8IvMyrpGu7eAvxIRYCVV-19" target="8IvMyrpGu7eAvxIRYCVV-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1060" y="1450" as="sourcePoint" />
+            <mxPoint x="1144" y="1582" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-54" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;*&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="1121.25" y="1550" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8IvMyrpGu7eAvxIRYCVV-55" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1550" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
