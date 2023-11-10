@@ -1,0 +1,38 @@
+.container-popup {
+    height: 300px;
+    padding: 20px 20px 20px 20px;
+}
+.container-popup-details {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 0px 10px 0px 5px;
+}
+.container-info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 10px;
+}
+.container-vertical-left {
+    position: inline-block;
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+}
+.container-image-links {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 35%;
+    text-align: center;
+    height: 15%;
+    border: 2px solid black;
+}
+.container-error {
+   
+    background-size: 400px;
+    width: 400px;
+    height: 170px;
+}

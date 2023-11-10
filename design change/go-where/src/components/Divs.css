@@ -1,0 +1,38 @@
+.container-center { /* CreateGroup.js, GroupPage.js, AddMemberPage.js, ActivityPage.js */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    /* padding: 120px 0px 0px 0px; */
+    width: auto;
+}
+.container-details { /* ActivityPage.js */
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    width: auto;
+    height: auto;
+}
+.container-horizontal-scroll { /* ActivityPage.js */
+    position: relative;
+    padding: 10px 150px;
+    height: 500px;
+    display:flex;
+    width: auto;
+    overflow: auto;
+}
+.container-activity { /* ActivityBox.js */
+    position:relative;
+    border: 2px solid #579aff;
+    width: 400px;
+    height: 220px;
+    text-align: center;
+    margin: 10px 10px;
+    border-radius: 25px;
+    padding: 0px 15px 0px 15px;
+    box-shadow: 5px 5px #579aff84;
+    cursor: pointer;
+}
+.container-activity:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,9 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    left:inherit !important;
+    right:0px;
+  }

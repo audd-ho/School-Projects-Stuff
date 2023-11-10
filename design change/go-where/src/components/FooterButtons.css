@@ -1,0 +1,18 @@
+.footer {
+    margin-top: -100px;
+    position: absolute;
+    bottom: 60px;
+    width: 98%;
+}
+.backDiv {
+    text-align: left;
+    width: 40%;
+    float: left;
+    margin-left: 50px;
+}
+.nextDiv {
+    text-align: right;
+    float: right;
+    width: 40%;
+    margin-right: 20px;
+}

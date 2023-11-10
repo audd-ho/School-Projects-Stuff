@@ -1,0 +1,42 @@
+.centerLobbyStuff {
+    position: relative;
+    min-height: 60vh;
+}
+
+.centerLobby {
+    margin-top: 3%;
+}
+
+.centerUsers {
+    max-width: 45%;
+    height: 100%;
+}
+
+.membersButton {
+    width: 270px !important;
+    height: 70px !important;
+    margin: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.add-members-location {
+    flex-grow: 1;
+}
+
+.addmembersButton {
+    width: 100px !important;
+    height: 100px !important;
+    background-image: url("../plus.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.foots {
+    margin-right: 5%;
+    margin-top: 0%;
+}
+
+.centerNIL {
+    top: 10%;
+}

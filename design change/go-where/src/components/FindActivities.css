@@ -1,0 +1,24 @@
+.activities-scroll-box::-webkit-scrollbar{
+    display: none;
+}
+
+.activities-scroll-box {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.LOAD {
+    position: absolute;
+
+    top: 18%;
+    left: 37%;
+    height: 50%;
+    width: 50%;
+
+    background-image: url("./loading.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 100%;
+    
+    z-index: 99999;
+}

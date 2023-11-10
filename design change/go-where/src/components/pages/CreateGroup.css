@@ -1,0 +1,21 @@
+.centerCreate {
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    top: 13%;
+    margin: auto;
+}
+
+.centerExtra {
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 60% !important;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+}
+
+.centerInfo {
+    top: 10%;
+}

@@ -1,0 +1,73 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+$chosencolour:#24343C;
+
+.btn-warning {
+    @include button-variant($chosencolour, darken($chosencolour, 7.5%), darken($chosencolour, 10%), lighten($chosencolour,5%), lighten($chosencolour, 10%), darken($chosencolour,30%));
+}
+
+.btn-outline-warning {
+    @include button-outline-variant($chosencolour, #222222, lighten($chosencolour,5%), $chosencolour);
+}
+
+.btn-warning {
+    font-size: 25px;
+    font-weight: 500;
+    color: white !important;
+}
+
+
+$chosencolour2:#e4dac6;
+
+.btn-success {
+    @include button-variant($chosencolour2, darken($chosencolour2, 7.5%), darken($chosencolour2, 10%), lighten($chosencolour2,5%), lighten($chosencolour2, 10%), darken($chosencolour2,30%));
+}
+
+.btn-outline-success {
+    @include button-outline-variant($chosencolour2, #222222, lighten($chosencolour2,5%), $chosencolour2);
+}
+
+.btn-success {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(104, 104, 104) !important;
+    //background-color: antiquewhite; // can use!!
+}
+
+.btn-success:hover {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(66, 66, 66) !important;
+}
+
+
+$chosencolour3:#e4dac6;
+
+.btn-primary {
+    @include button-variant($chosencolour3, darken($chosencolour3, 7.5%), darken($chosencolour3, 10%), lighten($chosencolour3,5%), lighten($chosencolour3, 10%), darken($chosencolour3,30%));
+}
+
+.btn-outline-primary {
+    @include button-outline-variant($chosencolour3, #222222, lighten($chosencolour3,5%), $chosencolour3);
+}
+
+.btn-primary {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(104, 104, 104) !important;
+    background-color: antiquewhite; // can use!!
+}
+
+.btn-primary:hover {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(66, 66, 66) !important;
+}
+
+/*
+.btn-primary:active {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(255, 0, 0) !important;
+}
+*/

@@ -1,0 +1,42 @@
+.input {
+    margin: 10px 20px;
+	border-radius:28px;
+    background-color:#dae9ff;
+	display:inline-block;
+    border: 2px solid #a4c8ff;
+	cursor:pointer;
+	color:black;
+	padding:16px 31px;
+    width: 250px;
+}
+
+p#activity-box { /* ActivityBox.js */
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 5px 0px 0px 0px;
+}
+p#popup {
+    font-size: 14px;
+    margin: 5px 5px;
+}
+h1#activities { /* ActivityPage.js */
+	background-image: url(../images/activity_word.png);
+	background-size: 400px;
+	height: 75px;
+	width: 305px;
+	padding-left: 95px;
+	padding-top: 33px;
+}
+h2#activity-box { /* ActivityBox.js */
+	margin: 20px 0px 5px 0px;
+}
+h2#popup {
+	margin: 0px 0px 0px 0px;
+}
+h3 { /* ActivityPage.js */
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h3#popup {
+	margin: 5px;
+}

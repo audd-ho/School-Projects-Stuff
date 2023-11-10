@@ -1,0 +1,4 @@
+@import "~@geoapify/geocoder-autocomplete/styles/round-borders.css";
+.autocomplete-container {
+    position: relative;
+}

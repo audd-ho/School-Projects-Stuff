@@ -1,0 +1,204 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Data.gov.sg APIs",
+    "description": "\"APIs for People\"",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.data.gov.sg/v1"
+    }
+  ],
+  "paths": {
+    "/environment/4-day-weather-forecast": {
+      "get": {
+        "summary": "Retrieve the latest 4 day weather forecast",
+        "description": "- Updated twice a day from NEA\n- The forecast is for the next 4 days\n- Use the `date_time` parameter to retrieve the latest forecast issued at that moment in time.\n- Use the `date` parameter to retrieve all of the forecasts issued for that day\n",
+        "tags": ["Environment"],
+        "parameters": [
+          {
+            "name": "date_time",
+            "in": "query",
+            "description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "description": "YYYY-MM-DD",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "4 Day Weather Forecast",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "api_info": {
+                      "$ref": "#/components/schemas/ApiInfo"
+                    },
+                    "items": {
+                      "type": "array",
+                      "description": "Array of items",
+                      "items": {
+                        "$ref": "#/components/schemas/4DayWeatherForecast"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/Error"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ApiInfo": {
+        "type": "object",
+        "description": "Contains information about the API (from Data.gov.sg)",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": ["healthy"]
+          }
+        }
+      },
+
+      "4DayWeatherForecast": {
+        "type": "object",
+        "required": ["update_timestamp", "timestamp", "forecasts"],
+        "properties": {
+          "update_timestamp": {
+            "type": "string",
+            "description": "Time of acquisition of data from NEA",
+            "format": "date-time"
+          },
+          "timestamp": {
+            "type": "string",
+            "description": "Time forecast was issued by NEA",
+            "format": "date-time"
+          },
+          "forecasts": {
+            "type": "array",
+            "description": "Chronologically ordered forecasts for the next 4 days",
+            "items": {
+              "type": "object",
+              "required": [
+                "date",
+                "timestamp",
+                "forecast",
+                "temperature",
+                "relative_humidity",
+                "wind"
+              ],
+              "properties": {
+                "date": {
+                  "type": "string",
+                  "description": "Forecast Date"
+                },
+                "timestamp": {
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Timestamp which indicates the start of the day"
+                },
+                "forecast": {
+                  "type": "string",
+                  "description": "Forecast summary for the day"
+                },
+                "relative_humidity": {
+                  "type": "object",
+                  "description": "Unit of measure -  Percentage",
+                  "required": ["low", "high"],
+                  "properties": {
+                    "low": {
+                      "type": "number"
+                    },
+                    "high": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "temperature": {
+                  "type": "object",
+                  "description": "Unit of measure -  Degrees Celsius",
+                  "required": ["low", "high"],
+                  "properties": {
+                    "low": {
+                      "type": "number"
+                    },
+                    "high": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "wind": {
+                  "type": "object",
+                  "required": ["speed", "direction"],
+                  "properties": {
+                    "speed": {
+                      "type": "object",
+                      "description": "Unit of measure -  Kilometeres per hour",
+                      "required": ["low", "high"],
+                      "properties": {
+                        "low": {
+                          "type": "number"
+                        },
+                        "high": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "direction": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+
+      "Error": {
+        "type": "object",
+        "required": ["code", "message"],
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "responses": {
+      "Error": {
+        "description": "Error information",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      }
+    }
+  }
+}
